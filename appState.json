@@ -1,0 +1,93 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "0096ee4c-1598-4a8a-a249-fd89f4ee0526": {
+        "id": "0096ee4c-1598-4a8a-a249-fd89f4ee0526",
+        "parent": null,
+        "name": "simpleProject.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "simpleProject.js",
+        "cursor": {
+          "lineNumber": 15,
+          "column": 3
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": []
+        },
+        "triggers": [
+          {
+            "resourceName": "apigusEast2SimpleSMSGatewaysendSMSpost",
+            "config": {}
+          }
+        ],
+        "testCases": {}
+      }
+    },
+    "openFiles": [
+      "0096ee4c-1598-4a8a-a249-fd89f4ee0526"
+    ],
+    "currentFileId": "0096ee4c-1598-4a8a-a249-fd89f4ee0526",
+    "resources": {
+      "apigusEast2SimpleSMSGatewaysendSMSpost": {
+        "name": "apigusEast2SimpleSMSGatewaysendSMSpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "us-east-2",
+          "apiMode": 0,
+          "apiName": "SimpleSMSGateway",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "sendSMS",
+          "resourcePath": "/sendSMS",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "Prod",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "projectName": "simpleProject",
+    "projectDescription": "simpleProject",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-2",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {},
+    "lastSave": 1584197932268
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "simpleproject",
+      "url": "https://github.com/scottwhendrickson/simpleproject"
+    }
+  }
+}
