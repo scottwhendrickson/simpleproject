@@ -1,18 +1,18 @@
 {
   "EDITOR_STATE": {
     "allProjectFiles": {
-      "0096ee4c-1598-4a8a-a249-fd89f4ee0526": {
-        "id": "0096ee4c-1598-4a8a-a249-fd89f4ee0526",
+      "c3d93cc3-27ae-479c-87d7-fc662ce17136": {
+        "id": "c3d93cc3-27ae-479c-87d7-fc662ce17136",
         "parent": null,
-        "name": "simpleProject.js",
+        "name": "simpleproject.js",
         "type": "JS_LAMBDA",
         "isDirectory": false,
         "children": [],
         "isRemovable": true,
-        "filePath": "simpleProject.js",
+        "filePath": "simpleproject.js",
         "cursor": {
-          "lineNumber": 15,
-          "column": 3
+          "lineNumber": 22,
+          "column": 5
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -23,25 +23,24 @@
         },
         "triggers": [
           {
-            "resourceName": "apigusEast2SimpleSMSGatewaysendSMSpost",
+            "resourceName": "apigusEast1SMSGatewaysendSMSpost",
             "config": {}
           }
-        ],
-        "testCases": {}
+        ]
       }
     },
     "openFiles": [
-      "0096ee4c-1598-4a8a-a249-fd89f4ee0526"
+      "c3d93cc3-27ae-479c-87d7-fc662ce17136"
     ],
-    "currentFileId": "0096ee4c-1598-4a8a-a249-fd89f4ee0526",
+    "currentFileId": "c3d93cc3-27ae-479c-87d7-fc662ce17136",
     "resources": {
-      "apigusEast2SimpleSMSGatewaysendSMSpost": {
-        "name": "apigusEast2SimpleSMSGatewaysendSMSpost",
+      "apigusEast1SMSGatewaysendSMSpost": {
+        "name": "apigusEast1SMSGatewaysendSMSpost",
         "type": "API_GATEWAY",
         "config": {
-          "selectedRegion": "us-east-2",
+          "selectedRegion": "us-east-1",
           "apiMode": 0,
-          "apiName": "SimpleSMSGateway",
+          "apiName": "SMSGateway",
           "endpointType": "EDGE",
           "resourceMode": 0,
           "resourceName": "sendSMS",
@@ -52,6 +51,16 @@
           "stageMode": 0,
           "stageName": "Prod",
           "mode": 0
+        }
+      },
+      "snsDirectSMSResource": {
+        "name": "snsDirectSMSResource",
+        "type": "SNS",
+        "config": {
+          "snsType": 1,
+          "numbers": [
+            "@{receiver}"
+          ]
         }
       }
     },
@@ -70,18 +79,25 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.176.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
-    "projectName": "simpleProject",
-    "projectDescription": "simpleProject",
+    "projectName": "simpleproject",
+    "projectDescription": "simpleproject",
     "projectVersion": "1.0.0",
-    "projectRegion": "us-east-2",
+    "projectRegion": "us-east-1",
     "platform": "AWS",
     "language": "nodejs",
-    "platformRegions": {},
-    "lastSave": 1584197932268
+    "platformRegions": {}
   },
   "VCS_STATE": {
     "provider": "GitHub",
